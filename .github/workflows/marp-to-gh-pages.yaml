@@ -24,7 +24,7 @@ jobs:
       - name: Marp Build (docs folder)
         uses: docker://marpteam/marp-cli:v2.3.0
         with:
-          args: --html --allow-local-files --theme theme.css -I docs/ -o site/
+          args: --html --allow-local-files --theme theme.css -I docs/ -o build/docs
         env:
           MARP_USER: root:root
 
