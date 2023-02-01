@@ -33,13 +33,13 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
-          preview-branch: gh-pages
+          preview-branch: main
           umbrella-dir: pr-preview
 
       - name: Deploy production
         if: ${{ github.event_name == 'push' }}
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
+          branch: main
           folder: ./build/
           clean-exclude: pr-preview/
