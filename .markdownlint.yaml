@@ -1,0 +1,6 @@
+# Default state for all rules
+default: true
+
+# MD013/line-length - Line length
+# Disabled - doesn't play nicely with marp presentation output
+MD013: false
