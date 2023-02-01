@@ -1,9 +1,8 @@
-
 name: marp-to-pages
 concurrency: marp-to-pages
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
     types:
       - opened
@@ -13,8 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v2
 
