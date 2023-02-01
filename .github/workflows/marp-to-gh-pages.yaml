@@ -22,7 +22,7 @@ jobs:
       - name: Marp Build (README)
         uses: docker://marpteam/marp-cli:v2.3.0
         with:
-          args: --html --allow-local-files --theme theme.css README.md -o index.html
+          args: --html --allow-local-files --theme theme.css README.md -o build/index.html
         env:
           MARP_USER: root:root
 
