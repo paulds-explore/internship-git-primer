@@ -9,6 +9,8 @@ class: invert
 
 # Introduction to Git and Version Control Outline
 
+![width:200px](../assets/img/git-logo.png)
+
 ---
 
 ## Purpose

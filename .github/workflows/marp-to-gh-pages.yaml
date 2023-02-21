@@ -20,10 +20,10 @@ jobs:
       - name: Copy files
         run: mkdir build && cp -R assets build/assets && cp theme.css build/theme.css
 
-      - name: Marp Build (README)
+      - name: Marp Build (index)
         uses: docker://marpteam/marp-cli:v2.3.0
         with:
-          args: --html --allow-local-files --theme theme.css README.md -o build/index.html
+          args: --html --allow-local-files --theme theme.css docs/0-index.md -o build/index.html
         env:
           MARP_USER: root:root
 
